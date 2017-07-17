@@ -14,9 +14,11 @@
     use Gismo\Component\Config\ConfigLoader;
     use Gismo\Component\HttpFoundation\Request\RequestFactory;
     use Gismo\Component\PhpFoundation\Helper\ErrorHandler;
+    use Golafix\App\BaseApp;
+    use Golafix\App\GolafixApp;
     use Leuffen\CV\CvApp;
 
-    require __DIR__ . "/../vendor/autoload.php";
+    require __DIR__ . "/../src/bootstrap.php";
 
     // Aktivieren der Html-Sauberen Exception Darstellung
     ErrorHandler::UseHttpErrorHandler();
@@ -31,5 +33,5 @@
     $request = RequestFactory::BuildFromEnv($config);
 
     // App Laden und ausführen.
-    $app = new CvApp($config, __DIR__ . "/plugins.json");
+    $app = new GolafixApp($config, __DIR__ . "/plugins.json");
     $app->run($request);
