@@ -1,0 +1,31 @@
+{
+    "name": "golafix/engine",
+    "type": "library",
+    "description": "Golafix engine",
+    "keywords": ["Golafix", "framework", "php"],
+    "homepage": "http://golafix.com",
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "Matthias Leuffen",
+            "email": "matthes@leuffen.de"
+        }
+    ],
+
+
+    "require": {
+        "php": ">=7.0",
+        "gismo/gismo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Golafix\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}

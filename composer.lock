@@ -1,0 +1,782 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "1b06b0f89edca86c5973501a8f2dd83d",
+    "content-hash": "42d6bc49ff48399d0c4425846d565d6d",
+    "packages": [
+        {
+            "name": "doctrine/annotations",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/annotations.git",
+                "reference": "07a9af2d4de5f9ef0bf2d9ae94421e5fc50d7859"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/07a9af2d4de5f9ef0bf2d9ae94421e5fc50d7859",
+                "reference": "07a9af2d4de5f9ef0bf2d9ae94421e5fc50d7859",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "1.*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Annotations\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Docblock Annotations Parser",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "annotations",
+                "docblock",
+                "parser"
+            ],
+            "time": "2016-02-26 09:54:41"
+        },
+        {
+            "name": "doctrine/lexer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\Lexer\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "lexer",
+                "parser"
+            ],
+            "time": "2014-09-09 13:34:57"
+        },
+        {
+            "name": "firephp/firephp-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firephp/firephp-core.git",
+                "reference": "b58e48ef2b6ab2d8fbe6d9aa585652d3e75486bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firephp/firephp-core/zipball/b58e48ef2b6ab2d8fbe6d9aa585652d3e75486bd",
+                "reference": "b58e48ef2b6ab2d8fbe6d9aa585652d3e75486bd",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/FirePHPCore/FirePHP.class.php",
+                    "lib/FirePHPCore/fb.php"
+                ],
+                "files": [
+                    "lib/FirePHPCore/fb.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christoph Dorn",
+                    "email": "christoph@christophdorn.com",
+                    "homepage": "http://christophdorn.com"
+                }
+            ],
+            "description": "Traditional FirePHPCore library for sending PHP variables to the browser.",
+            "homepage": "https://github.com/firephp/firephp-core",
+            "time": "2015-08-02 19:57:10"
+        },
+        {
+            "name": "gismo/expression-language",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gismo-framework/ExpressionLanguage.git",
+                "reference": "a6b57cf05091ac71dbe335c306dd42dd50c233b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gismo-framework/ExpressionLanguage/zipball/a6b57cf05091ac71dbe335c306dd42dd50c233b6",
+                "reference": "a6b57cf05091ac71dbe335c306dd42dd50c233b6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gismo\\Component\\ExpressionLanguage\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Gismo ExpressionLanguage Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-11-24 14:37:44"
+        },
+        {
+            "name": "gismo/gismo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gismo-framework/gismo.git",
+                "reference": "8b9c6e6a1cf5eab08a74461829425efb596c3071"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gismo-framework/gismo/zipball/8b9c6e6a1cf5eab08a74461829425efb596c3071",
+                "reference": "8b9c6e6a1cf5eab08a74461829425efb596c3071",
+                "shasum": ""
+            },
+            "require": {
+                "firephp/firephp-core": "*",
+                "html5/fhtml": "*",
+                "html5/htmlreader": "*",
+                "html5/template": "*",
+                "leafo/scssphp": "0.6.5",
+                "oyejorge/less.php": "~1.7.0.10",
+                "phore/annotations": "*",
+                "phore/di-base": "*",
+                "php": ">=7.0",
+                "psr/cache": "~1.0",
+                "symfony/yaml": "^3.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gismo\\Component\\Application\\": "src/application/src/Application",
+                    "Gismo\\Test\\Component\\Application\\": "test",
+                    "Gismo\\Component\\Di\\": "src/di/src/Di",
+                    "Gismo\\Component\\HttpFoundation\\": "src/http-foundation/src/HttpFoundation",
+                    "Gismo\\Component\\Partial\\": "src/partial/src/Partial",
+                    "Gismo\\Component\\PhpFoundation\\": "src/php-foundation/src/PhpFoundation",
+                    "Gismo\\Component\\Plugin\\": "src/plugin/src/Plugin",
+                    "Gismo\\Component\\DevTools\\": "src/dev-tools/src/DevTools",
+                    "Gismo\\Component\\Route\\": "src/route/src/Route",
+                    "Gismo\\Component\\Logging\\": "src/logging/src/Logging",
+                    "Gismo\\Component\\Api\\": "src/api/src/Api",
+                    "Gismo\\Component\\Config\\": "src/config/src/Config",
+                    "Gismo\\Component\\ApplicationDevTools\\": "src/applicationDevTools/src/ApplicationDevTools",
+                    "Gismo\\Component\\Cache\\": "src/cache/src/Cache",
+                    "Gismo\\Component\\Annotation\\": "src/annotation/src/Annotation",
+                    "Gismo\\Component\\JsBridge\\": "src/js-bridge/src/JsBridge"
+                },
+                "files": [
+                    "src/php-foundation/src/functions.inc.php"
+                ],
+                "exclude-from-classmap": [
+                    "/test/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Leuffen",
+                    "email": "matthes@leuffen.de"
+                }
+            ],
+            "description": "Gismo All in one",
+            "homepage": "https://getgismo.com",
+            "keywords": [
+                "Gismo",
+                "framework"
+            ],
+            "time": "2017-06-21 11:03:50"
+        },
+        {
+            "name": "html5/fhtml",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dermatthes/FHtml.git",
+                "reference": "6959299b5c3c768760477805c316e38893d05c80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dermatthes/FHtml/zipball/6959299b5c3c768760477805c316e38893d05c80",
+                "reference": "6959299b5c3c768760477805c316e38893d05c80",
+                "shasum": ""
+            },
+            "require": {
+                "html5/template": "*",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Html5\\FHtml\\": "src/FHtml"
+                },
+                "files": [
+                    "src/fhtml.inc.php"
+                ],
+                "exclude-from-classmap": [
+                    "/test/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Leuffen",
+                    "email": "matthes@leuffen.de",
+                    "homepage": "http://leuffen.de"
+                }
+            ],
+            "description": "FHtml Fluent HTML writing",
+            "homepage": "http://leuffen.de",
+            "keywords": [
+                "HTML5",
+                "fluent",
+                "template"
+            ],
+            "time": "2016-08-22 23:54:21"
+        },
+        {
+            "name": "html5/htmlreader",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dermatthes/HTMLReader.git",
+                "reference": "5e629485ad4abd1bf879237c8ad0827f13f1a8fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dermatthes/HTMLReader/zipball/5e629485ad4abd1bf879237c8ad0827f13f1a8fe",
+                "reference": "5e629485ad4abd1bf879237c8ad0827f13f1a8fe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "HTML5\\": "src/HTML5"
+                },
+                "exclude-from-classmap": [
+                    "/test/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Leuffen",
+                    "email": "matthes@leuffen.de",
+                    "homepage": "http://leuffen.de"
+                }
+            ],
+            "description": "Html5 stream tokenizer/reader (not using libxml)",
+            "homepage": "http://leuffen.de",
+            "keywords": [
+                "HTML5",
+                "html",
+                "parsing",
+                "tokenizer"
+            ],
+            "time": "2016-09-14 11:28:34"
+        },
+        {
+            "name": "html5/template",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dermatthes/html-template.git",
+                "reference": "ba33989641255640e0a78fe29ca1b4130997bb5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dermatthes/html-template/zipball/ba33989641255640e0a78fe29ca1b4130997bb5c",
+                "reference": "ba33989641255640e0a78fe29ca1b4130997bb5c",
+                "shasum": ""
+            },
+            "require": {
+                "gismo/expression-language": "^3.1",
+                "html5/htmlreader": "*",
+                "php": ">=7.0",
+                "symfony/yaml": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Html5\\Template\\": "src/Template"
+                },
+                "exclude-from-classmap": [
+                    "/test/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Leuffen",
+                    "email": "matthes@leuffen.de",
+                    "homepage": "http://leuffen.de"
+                }
+            ],
+            "description": "Inline Templating component",
+            "homepage": "http://leuffen.de",
+            "keywords": [
+                "HTML5",
+                "html",
+                "template"
+            ],
+            "time": "2016-11-25 10:35:59"
+        },
+        {
+            "name": "leafo/scssphp",
+            "version": "v0.6.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/scssphp.git",
+                "reference": "0649d38dfef6808be1a89040a3312e8bda0b3aed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/0649d38dfef6808be1a89040a3312e8bda0b3aed",
+                "reference": "0649d38dfef6808be1a89040a3312e8bda0b3aed",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "kherge/box": "~2.5",
+                "phpunit/phpunit": "~3.7",
+                "squizlabs/php_codesniffer": "~2.5"
+            },
+            "bin": [
+                "bin/pscss"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leafo\\ScssPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "scssphp is a compiler for SCSS written in PHP.",
+            "homepage": "http://leafo.github.io/scssphp/",
+            "keywords": [
+                "css",
+                "less",
+                "sass",
+                "scss",
+                "stylesheet"
+            ],
+            "time": "2016-06-20 15:25:08"
+        },
+        {
+            "name": "oyejorge/less.php",
+            "version": "v1.7.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oyejorge/less.php.git",
+                "reference": "42925c5a01a07d67ca7e82dfc8fb31814d557bc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oyejorge/less.php/zipball/42925c5a01a07d67ca7e82dfc8fb31814d557bc9",
+                "reference": "42925c5a01a07d67ca7e82dfc8fb31814d557bc9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.24"
+            },
+            "bin": [
+                "bin/lessc"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Less": "lib/"
+                },
+                "classmap": [
+                    "lessc.inc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Agar",
+                    "homepage": "https://github.com/agar"
+                },
+                {
+                    "name": "Martin Jantošovič",
+                    "homepage": "https://github.com/Mordred"
+                },
+                {
+                    "name": "Josh Schmidt",
+                    "homepage": "https://github.com/oyejorge"
+                }
+            ],
+            "description": "PHP port of the Javascript version of LESS http://lesscss.org (Originally maintained by Josh Schmidt)",
+            "homepage": "http://lessphp.gpeasy.com",
+            "keywords": [
+                "css",
+                "less",
+                "less.js",
+                "lesscss",
+                "php",
+                "stylesheet"
+            ],
+            "time": "2017-03-28 22:19:25"
+        },
+        {
+            "name": "phore/annotations",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phore/phore-annotations.git",
+                "reference": "85f2c51b6033d85c44659d952272b14080dda01e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phore/phore-annotations/zipball/85f2c51b6033d85c44659d952272b14080dda01e",
+                "reference": "85f2c51b6033d85c44659d952272b14080dda01e",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "*",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phore\\Annotations\\": "src/Annotations"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Leuffen",
+                    "email": "matthes@leuffen.de"
+                }
+            ],
+            "description": "Phore Annotations Abstraction",
+            "homepage": "https://getgismo.com",
+            "keywords": [
+                "Phore",
+                "annotations"
+            ],
+            "time": "2016-12-01 12:57:53"
+        },
+        {
+            "name": "phore/di-base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phore/phore-di-base.git",
+                "reference": "a31ac77aa49703985323828abb53d28a63a58fe7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phore/phore-di-base/zipball/a31ac77aa49703985323828abb53d28a63a58fe7",
+                "reference": "a31ac77aa49703985323828abb53d28a63a58fe7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phore\\Di\\": "src/Di"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Leuffen",
+                    "email": "matthes@leuffen.de"
+                }
+            ],
+            "description": "Dependency Injection Base Classes and Interfaces",
+            "homepage": "https://getgismo.com",
+            "keywords": [
+                "Phore",
+                "dependency injection",
+                "di"
+            ],
+            "time": "2016-12-02 16:41:07"
+        },
+        {
+            "name": "psr/cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "78c5a01ddbf11cf731f1338a4f5aba23b14d5b47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/78c5a01ddbf11cf731f1338a4f5aba23b14d5b47",
+                "reference": "78c5a01ddbf11cf731f1338a4f5aba23b14d5b47",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "time": "2016-10-13 14:48:10"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "3.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "519fb0872bb41e0f0c221ead8945eb12197bb034"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/519fb0872bb41e0f0c221ead8945eb12197bb034",
+                "reference": "519fb0872bb41e0f0c221ead8945eb12197bb034",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "symfony/console": "~2.8|~3.0|~4.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-07-03 10:20:17"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.0"
+    },
+    "platform-dev": []
+}
