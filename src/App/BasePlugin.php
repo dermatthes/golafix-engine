@@ -26,18 +26,12 @@
 
                 $context->addTemplatePath(GOLAFIX_TEMPLATE_PATH);
                 
-                
-                
                 $context[DotGolafixYml::class] = $context->factory(function () {
                     return new DotGolafixYml(GOLAFIX_YAML_FILE);
                 });
                 
-                $context->route->add("/about", function () use ($context) {
-                    echo ( $context["tpl.page.login"] )();
-                });
-                
-                $context->route->add("/::path", function ($path, DotGolafixYml $dotGolafixYml) use ($context) {
-                    $route = $dotGolafixYml->getRouter()->getBestRoute(implode ("/", $path));
+                $context->route->add("::path", function ($path, DotGolafixYml $dotGolafixYml) use ($context) {
+                    $route = $dotGolafixYml->getRouter()->getBestRoute($path);
                     $context["page.cur"] = $context->template($dotGolafixYml->absolutePath($route->target));
 
                     echo ( $context["page.cur"] )();
