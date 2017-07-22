@@ -24,7 +24,8 @@
             // Entwicklerseite
             if ($context instanceof FrontendContext) {
 
-                $context->addTemplatePath(GOLAFIX_TEMPLATE_PATH);
+                if (GOLAFIX_TEMPLATE_PATH !== null)
+                    $context->addTemplatePath(GOLAFIX_TEMPLATE_PATH);
                 
                 $context[DotGolafixYml::class] = $context->factory(function () {
                     return new DotGolafixYml(GOLAFIX_YAML_FILE);
