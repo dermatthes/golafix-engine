@@ -18,7 +18,7 @@
     use Golafix\App\GolafixApp;
     use Leuffen\CV\CvApp;
 
-    require __DIR__ . "/../src/bootstrap.php";
+    require "../src/bootstrap.php";
 
     // Aktivieren der Html-Sauberen Exception Darstellung
     ErrorHandler::UseHttpErrorHandler();
@@ -33,5 +33,5 @@
     $request = RequestFactory::BuildFromEnv($config);
 
     // App Laden und ausführen.
-    $app = new GolafixApp($config, __DIR__ . "/plugins.json");
+    $app = new GolafixApp($config,  "plugins.json");
     $app->run($request);
