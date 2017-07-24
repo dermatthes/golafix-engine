@@ -16,7 +16,7 @@
     "require": {
         "php": ">=7.0",
         "gismo/gismo": "*",
-        "symfony/yaml": "*"
+        "yaml/eyaml": "*"
     },
     "autoload": {
         "psr-4": {

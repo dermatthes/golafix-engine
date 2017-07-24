@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cf936226732951ea700e247db6189f53",
-    "content-hash": "4856094a69c40725ad11bdae6085cf76",
+    "hash": "b8316becc0098358aee7a5f75113ac0a",
+    "content-hash": "41e994b48a67ac906f406a1a7d73b5f7",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -81,12 +81,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+                "reference": "cc709ba91eee09540091ad5a5f2616727662e41b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
-                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/cc709ba91eee09540091ad5a5f2616727662e41b",
+                "reference": "cc709ba91eee09540091ad5a5f2616727662e41b",
                 "shasum": ""
             },
             "require": {
@@ -99,8 +99,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Lexer\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -127,7 +127,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2014-09-09 13:34:57"
+            "time": "2017-07-24 09:37:08"
         },
         {
             "name": "firephp/firephp-core",
@@ -223,19 +223,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gismo-framework/gismo.git",
-                "reference": "8b9c6e6a1cf5eab08a74461829425efb596c3071"
+                "reference": "388ab58f41f718768ddcc8c7fd7c5688b934ecf5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gismo-framework/gismo/zipball/8b9c6e6a1cf5eab08a74461829425efb596c3071",
-                "reference": "8b9c6e6a1cf5eab08a74461829425efb596c3071",
+                "url": "https://api.github.com/repos/gismo-framework/gismo/zipball/388ab58f41f718768ddcc8c7fd7c5688b934ecf5",
+                "reference": "388ab58f41f718768ddcc8c7fd7c5688b934ecf5",
                 "shasum": ""
             },
             "require": {
                 "firephp/firephp-core": "*",
                 "html5/fhtml": "*",
-                "html5/htmlreader": "*",
-                "html5/template": "*",
+                "html5/template": "^1.1",
                 "leafo/scssphp": "0.6.5",
                 "oyejorge/less.php": "~1.7.0.10",
                 "phore/annotations": "*",
@@ -245,11 +244,6 @@
                 "symfony/yaml": "^3.1"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Gismo\\Component\\Application\\": "src/application/src/Application",
@@ -292,7 +286,7 @@
                 "Gismo",
                 "framework"
             ],
-            "time": "2017-06-21 11:03:50"
+            "time": "2017-07-24 17:45:03"
         },
         {
             "name": "html5/fhtml",
@@ -351,16 +345,16 @@
         },
         {
             "name": "html5/htmlreader",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dermatthes/HTMLReader.git",
-                "reference": "5e629485ad4abd1bf879237c8ad0827f13f1a8fe"
+                "reference": "906bcfd1676b1d5cbb99e8401dd636cce790a45f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dermatthes/HTMLReader/zipball/5e629485ad4abd1bf879237c8ad0827f13f1a8fe",
-                "reference": "5e629485ad4abd1bf879237c8ad0827f13f1a8fe",
+                "url": "https://api.github.com/repos/dermatthes/HTMLReader/zipball/906bcfd1676b1d5cbb99e8401dd636cce790a45f",
+                "reference": "906bcfd1676b1d5cbb99e8401dd636cce790a45f",
                 "shasum": ""
             },
             "require": {
@@ -399,34 +393,32 @@
                 "parsing",
                 "tokenizer"
             ],
-            "time": "2016-09-14 11:28:34"
+            "time": "2017-07-20 08:00:15"
         },
         {
             "name": "html5/template",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dermatthes/html-template.git",
-                "reference": "ba33989641255640e0a78fe29ca1b4130997bb5c"
+                "reference": "e750dc7520208b4510c742c8f00de3cdbf25a241"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dermatthes/html-template/zipball/ba33989641255640e0a78fe29ca1b4130997bb5c",
-                "reference": "ba33989641255640e0a78fe29ca1b4130997bb5c",
+                "url": "https://api.github.com/repos/dermatthes/html-template/zipball/e750dc7520208b4510c742c8f00de3cdbf25a241",
+                "reference": "e750dc7520208b4510c742c8f00de3cdbf25a241",
                 "shasum": ""
             },
             "require": {
                 "gismo/expression-language": "^3.1",
-                "html5/htmlreader": "*",
+                "html5/htmlreader": "^1.1",
                 "php": ">=7.0",
                 "symfony/yaml": "*"
             },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1-dev"
-                }
+            "require-dev": {
+                "phpunit/phpunit": "^6.2"
             },
+            "type": "library",
             "autoload": {
                 "psr-4": {
                     "Html5\\Template\\": "src/Template"
@@ -453,7 +445,7 @@
                 "html",
                 "template"
             ],
-            "time": "2016-11-25 10:35:59"
+            "time": "2017-07-20 10:50:27"
         },
         {
             "name": "leafo/scssphp",
@@ -767,6 +759,52 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2017-07-03 10:20:17"
+        },
+        {
+            "name": "yaml/eyaml",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dermatthes/EYAML.git",
+                "reference": "0513873ebc940bffdfda27c513371a8c4f356bc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dermatthes/EYAML/zipball/0513873ebc940bffdfda27c513371a8c4f356bc4",
+                "reference": "0513873ebc940bffdfda27c513371a8c4f356bc4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "symfony/yaml": "*"
+            },
+            "require-dev": {
+                "nette/tester": "^1.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EYAML\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Leuffen",
+                    "email": "matthes@leuffen.de"
+                }
+            ],
+            "description": "Yaml with expressions parser (callbacks)",
+            "homepage": "http://github.com/dermatthes/EYAML",
+            "keywords": [
+                "framework",
+                "php",
+                "yaml"
+            ],
+            "time": "2017-07-24 16:29:18"
         }
     ],
     "packages-dev": [],

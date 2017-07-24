@@ -27,8 +27,8 @@
                 if (GOLAFIX_TEMPLATE_PATH !== null)
                     $context->addTemplatePath(GOLAFIX_TEMPLATE_PATH);
                 
-                $context[DotGolafixYml::class] = $context->factory(function () {
-                    return new DotGolafixYml(GOLAFIX_YAML_FILE);
+                $context[DotGolafixYml::class] = $context->factory(function () use ($context) {
+                    return new DotGolafixYml($context, GOLAFIX_YAML_FILE);
                 });
                 
                 $context->route->add("::path", function ($path, DotGolafixYml $dotGolafixYml) use ($context) {
