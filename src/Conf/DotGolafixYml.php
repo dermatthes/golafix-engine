@@ -9,32 +9,30 @@
     namespace Golafix\Conf;
 
 
+    use EYAML\EYAML;
     use Gismo\Component\Application\Assets\GoAssetContainer;
     use Gismo\Component\Application\Assets\GoAssetContainerTrait;
     use Gismo\Component\Di\DiContainer;
     use Golafix\Conf\GolafixRouter;
     use Symfony\Component\Yaml\Yaml;
 
-    class DotGolafixYml implements GoAssetContainer {
+    class DotGolafixYml extends EYAML implements GoAssetContainer {
         use GoAssetContainerTrait;
 
         private $data = null;
 
-        
+        private $mDi;
+
         
         public function __construct(DiContainer $di, $filename) {
+            $this->mDi = $di;
             $this->__asset_container_init($di, dirname($filename));
-            $this->data = Yaml::parse(file_get_contents($filename));
-        }
 
 
-        /**
-         * @param string $relativePath
-         * @return string
-         */
-        public function absolutePath (string $relativePath) : string {
-            return $this->_getAssetPath() . "/" . $relativePath;
+
+            $this->data = $this->parseFile($filename);
         }
+
 
 
         public function getRouter () : GolafixRouter {

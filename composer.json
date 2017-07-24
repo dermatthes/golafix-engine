@@ -16,7 +16,8 @@
     "require": {
         "php": ">=7.0",
         "gismo/gismo": "*",
-        "yaml/eyaml": "*"
+        "yaml/eyaml": "*",
+        "joomla/github": "*"
     },
     "autoload": {
         "psr-4": {
