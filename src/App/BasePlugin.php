@@ -26,7 +26,8 @@
 
                 $context->route->add("::path", function ($path, DotGolafixYml $dotGolafixYml, GolafixRouter $router) use ($context) {
                     $route = $router->getBestRoute($path);
-                    $context["page.cur"] = $context->template($dotGolafixYml->getPath() . $route->target);
+
+                    $context["page.cur"] = $context->template($dotGolafixYml->getPath() . "/" . $route->target);
 
                     echo ( $context["page.cur"] )();
                 });
