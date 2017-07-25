@@ -136,7 +136,7 @@ class ZipPool
                     "Local files are not permitted. (Accessing file: $uri"
                 );
             }
-            return $uri;
+            return $uri . "/";
         }
 
     }
