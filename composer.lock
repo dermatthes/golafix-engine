@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "237262c5f0cfddfcedd45af427c583c4",
-    "content-hash": "4640f2aeb38d03d07829c103c177f0c8",
+    "hash": "b93476978a6f84724c846019d2390723",
+    "content-hash": "d33baa4f508ae413d662181bfc7857c9",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -65,6 +65,61 @@
                 "tls"
             ],
             "time": "2017-03-06 11:59:08"
+        },
+        {
+            "name": "curl/curl",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-mod/curl.git",
+                "reference": "96f5bd47bab8d76f1883c257c6659091987ef662"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-mod/curl/zipball/96f5bd47bab8d76f1883c257c6659091987ef662",
+                "reference": "96f5bd47bab8d76f1883c257c6659091987ef662",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "~2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Curl": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hassan Amouhzi",
+                    "email": "hassan@anezi.net",
+                    "homepage": "http://hassan.amouhzi.com"
+                },
+                {
+                    "name": "php-curl-class",
+                    "homepage": "https://github.com/php-curl-class"
+                },
+                {
+                    "name": "user52",
+                    "homepage": "https://github.com/user52"
+                }
+            ],
+            "description": "cURL class for PHP",
+            "homepage": "https://github.com/php-mod/curl",
+            "keywords": [
+                "curl",
+                "dot"
+            ],
+            "time": "2017-04-03 15:04:35"
         },
         {
             "name": "doctrine/annotations",
@@ -1180,16 +1235,16 @@
         },
         {
             "name": "yaml/eyaml",
-            "version": "dev-master",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dermatthes/EYAML.git",
-                "reference": "ffa8be68cea71520d767ef2539ee05567e0914ad"
+                "reference": "b0b34b91b0db66cc060bcbe1ae9a3f83e2e4920d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dermatthes/EYAML/zipball/ffa8be68cea71520d767ef2539ee05567e0914ad",
-                "reference": "ffa8be68cea71520d767ef2539ee05567e0914ad",
+                "url": "https://api.github.com/repos/dermatthes/EYAML/zipball/b0b34b91b0db66cc060bcbe1ae9a3f83e2e4920d",
+                "reference": "b0b34b91b0db66cc060bcbe1ae9a3f83e2e4920d",
                 "shasum": ""
             },
             "require": {
@@ -1222,7 +1277,7 @@
                 "php",
                 "yaml"
             ],
-            "time": "2017-07-24 22:18:30"
+            "time": "2017-07-25 08:49:51"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -1277,14 +1332,74 @@
             "time": "2017-04-12 19:29:56"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "nette/tester",
+            "version": "v1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/tester.git",
+                "reference": "d97534578e8cf66eabe081e7d5eaa4dd527ab0c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/tester/zipball/d97534578e8cf66eabe081e7d5eaa4dd527ab0c8",
+                "reference": "d97534578e8cf66eabe081e7d5eaa4dd527ab0c8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "bin": [
+                "src/tester"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "An easy-to-use PHP unit testing framework.",
+            "homepage": "https://tester.nette.org",
+            "keywords": [
+                "nette",
+                "testing",
+                "unit"
+            ],
+            "time": "2016-03-19 14:34:02"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.0"
+        "php": ">=7.0",
+        "ext-curl": "*",
+        "ext-zip": "*",
+        "ext-zlib": "*"
     },
     "platform-dev": []
 }

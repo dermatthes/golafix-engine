@@ -34,4 +34,5 @@
 
     // App Laden und ausführen.
     $app = new GolafixApp($config,  "plugins.json");
+    $app->setGolafixYmlFile(GOLAFIX_YAML_FILE);
     $app->run($request);
