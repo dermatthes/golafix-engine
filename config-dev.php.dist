@@ -2,4 +2,7 @@
 
 // This is the distribution File. Please rename it to config-dev.php and make
 // changes as needed (This file is excluded by .gitignore)
+//
+// This file is for testing only.
 
+define("GOLAFIX_YAML_FILE", __DIR__ . "/../golafix-theme-blacktie-link/golafix.yml");

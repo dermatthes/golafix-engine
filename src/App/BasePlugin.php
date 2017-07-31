@@ -24,6 +24,14 @@
             // Entwicklerseite
             if ($context instanceof FrontendContext) {
 
+                $context->route->add ("/debug", function(Context $di, DotGolafixYml $dotGolafixYml) {
+                    echo "<h1>Golafix Debugger</h1>";
+                    var_dump($di);
+                    var_dump($dotGolafixYml);
+
+                });
+
+
                 $context->route->add("::path", function ($path, DotGolafixYml $dotGolafixYml, GolafixRouter $router) use ($context) {
                     $route = $router->getBestRoute($path);
 
